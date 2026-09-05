@@ -7,12 +7,13 @@
 </head>
 <body>
   <div class="weather-card">
-    <p class="icon">⛅</p>
+    <p class="icon" id="icon">☁️</p>
     <h1 id="cityName">Patna</h1>
     <h2 id="temp">--°C</h2>
     <p id="desc">Loading...</p>
     <input id="cityInput" placeholder="Enter city name">
     <button onclick="changeWeather()">Check Weather</button>
+    <div id="forecast"></div>
     <iframe id="map"></iframe>
   </div>
   <script src="script.js"></script>
