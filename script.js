@@ -43,10 +43,10 @@ async function changeWeather(){
       `;
     }
 
-  } catch(e){
-    alert("Error aa gaya");
-    document.getElementById("desc").innerText = "Kuch galat ho gaya, dobara try karo";
-  }
+ } catch(e){
+  alert("City not found! Please check the spelling.");
+  document.getElementById("desc").innerText = "City not found! Please check the spelling.";
+}
 }
 
 function getIcon(code){
