@@ -7,7 +7,7 @@ async function changeWeather(){
   try {
     let geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1`);
     let geoData = await geoRes.json();
-    if(!geoData.results) { alert("City nahi mila!"); return; }
+    if(!geoData.results) { alert("City not found! Please check the spelling."); return; }
     let lat = geoData.results[0].latitude;
     let lon = geoData.results[0].longitude;
     let name = geoData.results[0].name;
